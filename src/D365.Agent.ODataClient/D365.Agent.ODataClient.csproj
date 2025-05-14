@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings> <!-- Common with .NET 6+ project templates, matches reference -->
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <!-- NuGet Package Metadata -->
+    <PackageId>D365.Agent.ODataClient.DotNet</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>ProjectContributors</Authors>
+    <Company>ProjectCompany</Company>
+    <Description>A .NET OData client library for interacting with Microsoft Dynamics 365. Generated from D365 metadata.</Description>
+    <RepositoryUrl>https://github.com/ntrtd/d365-agent-odataclient-dotnet</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/ntrtd/d365-agent-odataclient-dotnet</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>Dynamics365 D365 OData Client .NET C#</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.OData.Client" Version="8.2.3" />
+    <PackageReference Include="Microsoft.OData.Core" Version="8.2.3" />
+    <PackageReference Include="Microsoft.OData.Edm" Version="8.2.3" />
+    <PackageReference Include="Microsoft.Spatial" Version="8.2.3" />
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+    <PackageReference Include="System.Text.Json" Version="9.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\README.md">
+      <Pack>true</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
