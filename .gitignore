@@ -45,7 +45,6 @@ bld/
 
 # OData Connected Service generated files
 **/Connected Services/**/D365ODataClient.cs
-**/Connected Services/**/D365ODataServiceCsdl.xml
 # More general rule for any generated .cs in Connected Services
 **/Connected Services/**/*.cs
 # Exclude the ConnectedService.json as it contains configuration
