@@ -21,6 +21,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Connected Services\D365ODataService\D365ODataServiceCsdl.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Connected Services\D365ODataService\D365ODataServiceCsdl.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.OData.Client" Version="8.2.3" />
     <PackageReference Include="Microsoft.OData.Core" Version="8.2.3" />
     <PackageReference Include="Microsoft.OData.Edm" Version="8.2.3" />
